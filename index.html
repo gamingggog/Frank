@@ -1,0 +1,47 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Assistent</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container" id="loginContainer">
+        <div class="login-box">
+            <div id="loginForm">
+                <h2>Anmeldung</h2>
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Benutzername">
+                    <input type="password" id="password" placeholder="Passwort">
+                    <button id="loginButton">Anmelden</button>
+                </div>
+            </div>
+            
+            <div id="registerForm" class="register-form">
+                <h2>Registrierung</h2>
+                <div class="input-group">
+                    <input type="text" id="newUsername" placeholder="Benutzername">
+                    <input type="password" id="newPassword" placeholder="Passwort">
+                    <input type="password" id="confirmPassword" placeholder="Passwort bestätigen">
+                    <button id="registerButton">Registrieren</button>
+                </div>
+            </div>
+            
+            <p id="loginError" class="error-message"></p>
+            <button id="switchFormBtn" class="switch-form-btn">Neu hier? Registrieren</button>
+        </div>
+    </div>
+    
+    <div class="chat-container" id="chatContainer" style="display: none;">
+        <div class="chat-header">
+            <h1>KI-Assistent</h1>
+        </div>
+        <div class="chat-messages" id="messageArea"></div>
+        <div class="chat-input">
+            <textarea id="userInput" placeholder="Schreibe deine Nachricht hier... Du kannst auch Bilder hochladen! 📸"></textarea>
+            <button id="sendButton">Senden</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
